@@ -1,2 +1,10 @@
 jdk:
   - openjdk11
+
+install:
+  - cd android
+  - ./gradlew publishToMavenLocal
+
+env:
+  ANDROID_HOME: /opt/android-sdk
+  JAVA_OPTS: "-Xmx2g -XX:MaxPermSize=512m"
