@@ -9,8 +9,8 @@ android {
     defaultConfig {
         minSdkVersion 24
         targetSdkVersion 29
-        versionCode 240442
-        versionName "4.4.2"
+        versionCode 240443
+        versionName "4.4.3"
         project.archivesBaseName = "mobile-ffmpeg"
         consumerProguardFiles 'proguard-rules.pro'
     }
@@ -58,7 +58,7 @@ publishing {
         release(MavenPublication) {
             groupId = 'com.arthenica'
             artifactId = 'mobile-ffmpeg-full'
-            version = '4.4.2'
+            version = '4.4.3'
             
             afterEvaluate {
                 from components.release
